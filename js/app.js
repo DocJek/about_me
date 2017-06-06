@@ -7,6 +7,8 @@ alert('Welcome to the my page, I\'d like to play a game with you');
 
 user = prompt('Before we get started, tell me your name?');
 
+console.log('User\'s Name: ' + user);
+
 alert('Well hello ' + user + '!');
 alert('Now the rules: For every correct answer, you get 1 point. But get one wrong, and get docked a point.');
 
@@ -36,23 +38,23 @@ if (answer === 'yes' || answer === 'y') {
   alert('Not sure what you mean by' + answer + '. -1 point.');
 }
 
-console.log('Do you want to play my game: ' + answer);
+console.log('Does Roscoe like the color pink: ' + answer);
 console.log('Point(s) so far' + userPoints);
 
 answer = prompt('Does Roscoe like any sports', 'Yes or No').toLowerCase();
 
 if (answer === 'yes' || answer === 'y') {
-  alert('Wrong!');
-  userPoints--;
-} else if (answer === 'no' || answer === 'n') {
-  alert('Not bad, on to the next question');
+  alert('Well done, ' + user + '. Next question.');
   userPoints++;
+} else if (answer === 'no' || answer === 'n') {
+  alert(user + ', you\'re not great at this.');
+  userPoints--;
 } else {
   alert('Not sure what you mean by' + answer + '. -1 point.');
   userPoints--;
 }
 
-console.log('Do you want to play my game: ' + answer);
+console.log('Does Roscoe like any sports: ' + answer);
 console.log('Point(s) so far' + userPoints);
 
 answer = prompt('Does Roscoe enjoy walking?', 'Yes or No').toLowerCase();
@@ -84,7 +86,7 @@ if (answer === 'yes' || answer === 'y') {
   userPoints--;
 }
 
-console.log('Do you want to play my game: ' + answer);
+console.log('Does Roscoe enjoy walking: ' + answer);
 console.log('Point(s) so far' + userPoints);
 
 alert('You achieved ' + userPoints + ' points');

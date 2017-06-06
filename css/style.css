@@ -2,8 +2,9 @@ h2 {
   color: #8B0000;
   font-weight: 300;
   font-size: 50ems;
+  text-align: center;
 }
 
 body {
-  background-image: https://i.ytimg.com/vi/jicA7kGKias/maxresdefault.jpg;
+  background-image: url("../images/sawmask.jpg");
 }
