@@ -3,6 +3,7 @@ var userPoints = 0;
 var answer;
 var user;
 var bodyPart;
+var attempts = 4;
 
 alert('Welcome to the my page, I\'d like to play a game with you');
 
@@ -14,7 +15,7 @@ alert('Welcome ' + user + '.');
 alert('Now the rules: For every correct answer, you get 1 point. But get one wrong, you get docked a point and a body part.');
 
 answer = prompt('Do you wanna play my game?', 'Yes or No').toLowerCase();
-bodyPart = 'finger';
+bodyPart = 'left thumb';
 if (answer === 'yes' || answer === 'y') {
   alert('I was testing you, ' + user + '. Congratulations, you get 1 point');
   userPoints++;
@@ -98,6 +99,37 @@ if (answer === 'yes' || answer === 'y') {
 
 console.log('Does Roscoe enjoy walking: ' + answer);
 console.log('Point(s) so far: ' + userPoints);
+
+// Multiple try question with a number answer
+bodyPart = 'finger';
+answer = parseInt(prompt('How many years has Roscoe boxed for? But be careful, for as you only have ' + attempts + ' fingers on your left hand (not including thumb), you also only have ' + attempts + ' tries and each attempt will dock a point.'));
+while (attempts >= 1 && answer != 7) {
+  if (answer < 7) {
+    alert(user + ', your guess is too low.');
+    attempts--;
+    userPoints--;
+    console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+  } else if (answer > 7) {
+    alert(user + ', your guess is too high.');
+    attempts--;
+    userPoints--;
+    console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+  } else if (answer === null) {
+    alert(user + ', your guess is too high.');
+    attempts--;
+    userPoints--;
+    console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+  } else {
+    alert('Nice job and you get to keep your ' + attempts + ' fingers.');
+    userPoints++;
+    console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+  }
+  answer = parseInt(prompt('That\'s one ' + bodyPart + ', ' + attempts + ' to go. Again I ask, how many years has Roscoe boxed for? As you only have ' + attempts + ' fingers on your left hand (not including thumb), you also only have ' + attempts + ' tries left.'));
+  console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+}
+
+
+
 
 alert('You achieved ' + userPoints + ' points');
 
