@@ -21,10 +21,10 @@ if (answer === 'yes' || answer === 'y') {
 } else {
   alert('Not a good start, ' + user + ', you are docked a point and your ' + bodyPart + '. Schlunk!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 }
 console.log('Do you want to play my game: ' + answer);
 console.log('Point(s) so far: ' + userPoints);
-console.log('Body part lost this question: ' + bodyPart);
 
 alert('I know, that first one was a bit of a trick. Now let the REAL game begin!');
 
@@ -36,30 +36,32 @@ if (answer === 'yes' || answer === 'y') {
 } else if (answer === 'no' || answer === 'n') {
   alert('No, ' + user + '. Since you have trouble using your eyes, you lose one ' + bodyPart + '. Pop!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 } else {
   alert('Not sure what you mean by ' + answer + '. -1 point. Lose an' + bodyPart + '. Pop!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 }
 
 console.log('Does Roscoe have tattoos: ' + answer);
 console.log('Point(s) so far: ' + userPoints);
-console.log('Body part lost this question: ' + bodyPart);
 
 answer = prompt('Does Roscoe like the color pink', 'Yes or No').toLowerCase();
 bodyPart = 'tongue';
 if (answer === 'yes' || answer === 'y') {
   alert('Wrong! -1 point and your ' + bodyPart + '. Slice!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 } else if (answer === 'no' || answer === 'n') {
   alert('Not bad, on to the next question');
   userPoints++;
 } else {
-  alert('Not sure what you mean by' + answer + '. -1 point and your ' + bodyPart + 'Slice!');
+  alert('Not sure what you mean by ' + answer + '. -1 point and your ' + bodyPart + 'Slice!');
+  console.log('Body part lost this question: ' + bodyPart);
 }
 
 console.log('Does Roscoe like the color pink: ' + answer);
 console.log('Point(s) so far: ' + userPoints);
-console.log('Body part lost this question: ' + bodyPart);
 
 answer = prompt('Does Roscoe like any sports', 'Yes or No').toLowerCase();
 bodyPart = 'arm';
@@ -69,14 +71,15 @@ if (answer === 'yes' || answer === 'y') {
 } else if (answer === 'no' || answer === 'n') {
   alert(user + ', you\'re not great at this. Lose a ' + bodyPart + '. Lop!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 } else {
-  alert('Not sure what you mean by' + answer + '. -1 point and your ' + bodyPart + '. Lop!');
+  alert('Not sure what you mean by ' + answer + '. -1 point and your ' + bodyPart + '. Lop!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 }
 
 console.log('Does Roscoe like any sports: ' + answer);
 console.log('Point(s) so far: ' + userPoints);
-console.log('Body part lost this question: ' + bodyPart);
 
 answer = prompt('Does Roscoe enjoy walking?', 'Yes or No').toLowerCase();
 bodyPart = 'leg';
@@ -86,14 +89,15 @@ if (answer === 'yes' || answer === 'y') {
 } else if (answer === 'no' || answer === 'n') {
   alert('No, ' + user + '. Do you even know Roscoe? You lose an ' + bodyPart + '. Rrrrip!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 } else {
-  alert('Not sure what you mean by' + answer + '. -1 point and your ' + bodyPart + '. Rrrrip!');
+  alert('Not sure what you mean by ' + answer + '. -1 point and your ' + bodyPart + '. Rrrrip!');
   userPoints--;
+  console.log('Body part lost this question: ' + bodyPart);
 }
 
 console.log('Does Roscoe enjoy walking: ' + answer);
 console.log('Point(s) so far: ' + userPoints);
-console.log('Body part lost this question: ' + bodyPart);
 
 alert('You achieved ' + userPoints + ' points');
 
