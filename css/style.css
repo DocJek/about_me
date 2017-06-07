@@ -2,8 +2,37 @@ h2 {
   color: #8B0000;
   font-weight: 300;
   font-size: 2.3em;
+  /*border: 1px dashed #8B0000;*/
+  padding-top: 0.5em;
+  text-align: center;
+  margin-top: 5px;
+  width: 200px;
+  margin: 0px 540px 0px 540px;
 }
 
 body {
   background-image: url("../images/sawmask.jpg");
+}
+
+dl {
+  color: #FFF;
+}
+
+dt {
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+section {
+  color: white;
+  order: unset;
+  width: 200px;
+  padding: 1em;
+  float: right;
+  margin-bottom: 500px;
+}
+
+.top10 {
+  display: flex;
+  flex-direction: column-reverse;
 }
