@@ -177,7 +177,6 @@ while (attempts > 1 && foods.indexOf(answer) === -1) {
 
 if (foods.indexOf(answer) !== -1) {
   alert('Well done, ' + user + '.');
-  userPoints++;
   console.log('Guess Roscoe\'s fav food: ' + answer);
   console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
 }
