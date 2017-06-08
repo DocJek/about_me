@@ -13,7 +13,9 @@ user = prompt('Before we get started, tell me your name?');
 console.log('User\'s Name: ' + user);
 
 alert('Welcome ' + user + '.');
+
 alert('Now the rules: For every correct answer, you get 1 point. But get one wrong, you get docked a point and a body part.');
+
 totalPoints = 1;
 answer = prompt('Do you wanna play my game?', 'Yes or No').toLowerCase();
 bodyPart = 'left thumb';
@@ -52,6 +54,7 @@ console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
 answer = prompt('Does Roscoe like the color pink', 'Yes or No').toLowerCase();
 bodyPart = 'tongue';
 totalPoints = 3;
+
 if (answer === 'yes' || answer === 'y') {
   alert('Wrong! -1 point and your ' + bodyPart + '. Slice!');
   userPoints--;
@@ -61,6 +64,7 @@ if (answer === 'yes' || answer === 'y') {
   userPoints++;
 } else {
   alert('Not sure what you mean by ' + answer + '. -1 point and your ' + bodyPart + 'Slice!');
+  userPoints--;
   console.log('Body part lost this question: ' + bodyPart);
 }
 
@@ -104,47 +108,88 @@ if (answer === 'yes' || answer === 'y') {
 
 console.log('Does Roscoe enjoy walking: ' + answer);
 console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
-
 // Multiple try question with a number answer
 bodyPart = 'finger';
 totalPoints = 9;
+
+alert('I\'m going to give you a chance at life. + 4 points');
+
 userPoints += 4;
-console.log(userPoints);
-answer = parseInt(prompt('How old is Roscoe? But be careful, for as you only have ' + attempts + ' fingers on your left hand (not including thumb), you also only have ' + attempts + ' tries and each attempt will dock a point.'));
-while (attempts >= 1 && answer != 35) {
-  if (answer < 35) {
-    alert(user + ', your guess is too low.');
+console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+
+answer = parseInt(prompt('How old is Roscoe? But be careful, for as you only have ' + attempts + ' fingers on your left hand (not including thumb, of course), you also only have ' + attempts + ' tries and each attempt will dock a point.'));
+
+while (attempts > 1 && answer != 35) {
+  if (answer < 35) { // if answer is not enough
+    alert(user + ', your guess is too low. You lose a ' + bodyPart + '.');
     attempts--;
     userPoints--;
     console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
-  } else if (answer === 35) {
+    console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+    console.log('Guess Roscoe\'s age: ' + answer);
+  } else if (answer === 35) { // if answer is correct
     alert('Nice job and you get to keep your ' + attempts + ' fingers.');
     userPoints++;
     console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
-  } else if (answer > 35) {
-    alert(user + ', your guess is too high.');
+    console.log('Guess Roscoe\'s age: ' + answer);
+  } else if (answer > 35) { // if answer is too much
+    alert(user + ', your guess is too high. You lose a ' + bodyPart + '.');
     attempts--;
     userPoints--;
     console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
-  } else {
-    alert(user + ', you must choose a number.');
+    console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+    console.log('Guess Roscoe\'s age: ' + answer);
+  } else { // all other possibilities
+    alert(user + ', you must choose a number. You lose a ' + bodyPart + '.');
     attempts--;
     userPoints--;
-    console.log(answer);
     console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+    console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+    console.log('Guess Roscoe\'s age: ' + answer);
   }
-  answer = parseInt(prompt('That\'s one ' + bodyPart + ', ' + attempts + ' to go. Again I ask, how many years has Roscoe boxed for? As you only have ' + attempts + ' fingers on your left hand (not including thumb), you also only have ' + attempts + ' tries left.'));
-  console.log('User has: ' + attempts + ' attempts and ' + attempts + ' fingers left.');
+  answer = parseInt(prompt('That\'s one ' + bodyPart + ', ' + attempts + ' to go. Again I ask, how old is Roscoe? As you only have ' + attempts + ' fingers on your left hand (not including your thumb, of course), you also only have ' + attempts + ' tries left.'));
 }
+
+console.log('Guess Roscoe\'s age: ' + answer);
 console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
 
+alert('You\'ve done well to make it this far, ' + user + '. Here\'s a bonus 6 points.');
 
+userPoints += 6;
+bodyPart = 'tooth';
+totalPoints = 15;
+attempts = 6;
 
+console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+
+var foods = ['sushi', 'steak', 'pasta'];
+
+answer = prompt('For this one, you get 6 tries. For every incorrect answer, I will dock a point and pull one of your teeth. Name one of Roscoe\'s favorite foods:').toLowerCase();
+
+while (attempts > 1 && foods.indexOf(answer) === -1) {
+  alert(user + ', you were incorrect, you lose a ' + bodyPart + '. Pull!');
+  answer = prompt('Name one of Roscoe\'s favorite foods').toLowerCase();
+  userPoints--;
+  attempts--;
+  console.log('User has ' + attempts + ' left.');
+  console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+}
+
+if (foods.indexOf(answer) !== -1) {
+  alert('Well done, ' + user + '.');
+  userPoints++;
+  console.log('Guess Roscoe\'s fav food: ' + answer);
+  console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
+}
 
 alert(user + ', you achieved ' + userPoints + ' points out of ' + totalPoints + '.');
 
 if (userPoints <= 0) {
   alert('You Failed, and thus you bleed out and die');
+  console.log('User died');
+  console.log('Final Score: ' + userPoints + ' points out of ' + totalPoints + '.');
 } else {
   alert('Nice job, you\'ve won this time...');
+  console.log('User won');
+  console.log('Final Score: ' + userPoints + ' points out of ' + totalPoints + '.');
 }
