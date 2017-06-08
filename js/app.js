@@ -154,9 +154,9 @@ while (attempts > 1 && answer != 35) {
 console.log('Guess Roscoe\'s age: ' + answer);
 console.log('Point(s) so far: ' + userPoints + ' out of ' + totalPoints);
 
-alert('You\'ve done well to make it this far, ' + user + '. Here\'s a bonus 6 points.');
+alert('You\'ve done well to make it this far, ' + user + '. Here\'s a bonus 5 points.');
 
-userPoints += 6;
+userPoints += 5;
 bodyPart = 'tooth';
 totalPoints = 15;
 attempts = 6;
