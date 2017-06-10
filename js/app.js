@@ -71,7 +71,7 @@ function gameResult() {
 
 function question1() {
   totalPoints = 1;
-  answer = prompt('Do you wanna play my game?', 'Yes or No').toLowerCase();
+  answer = prompt('Do you want to play my game?', 'Yes or No').toLowerCase();
   bodyPart = 'left thumb';
   if (answer === 'yes' || answer === 'y') {
     alert('I was testing you, ' + user + '. Congratulations, you get 1 point');
