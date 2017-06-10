@@ -17,11 +17,10 @@ h2 {
   font-size: 2.3em;
   /*border: 1px dashed #8B0000;*/
   padding-top: 0.1em;
-  text-align: center;
   margin-top: 5px;
-  width: 200px;
-  margin: 0px 540px 0px 540px;
+  width: 300px;
   position: relative;
+  clear: both;
 }
 
 body {
@@ -34,16 +33,25 @@ body {
 }
 
 dl {
-  color: #FFF;
+  color: #8b0000;
+  text-shadow: 1px 1px 0.15em black;
 }
 
 dt {
-  font-weight: bold;
+  font-family: 'Ceviche One', cursive;
+  font-size: 35px;
   margin: 15px 0px;
 }
 
+dd {
+  font-size: 16px;
+}
+
 section {
-  color: #FFF;
+  font-family: 'Ceviche One', cursive;
+  font-size: 30px;
+  text-shadow: 1px 1px 0.15em black;
+  color: #8b0000;
   order: unset;
   width: 200px;
   padding: 1em;
@@ -52,6 +60,9 @@ section {
 }
 
 .top10 {
+  padding-top: none;
+  font-size: 20px;
+  text-shadow: 1px 1px 0.15em black;
   display: flex;
   flex-direction: column-reverse;
 }
