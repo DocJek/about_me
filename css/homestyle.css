@@ -3,6 +3,14 @@ nav {
   color: #FFF;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
 h2 {
   color: #8B0000;
   font-weight: 300;

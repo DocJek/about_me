@@ -45,13 +45,13 @@ function bonus(userPoints){
 }
 
 function intro() {
-  alert('Welcome to the my page, I\'d like to play a game with you');
+  alert('Welcome, I want to play a game with you.');
 
   user = prompt('Before we get started, tell me your name?');
 
   console.log('User\'s Name: ' + user);
 
-  alert('Welcome ' + user + '.');
+  alert('Hello, ' + user + '.');
 
   alert('Now the rules: For every correct answer, you get 1 point. But get one wrong, you get docked a point and a body part. Click Cancel on any of the first questions to exit the game, but beware, for after the 5th question lies the point of no return!');
 }
@@ -71,7 +71,7 @@ function gameResult() {
 
 function question1() {
   totalPoints = 1;
-  answer = prompt('Do you wanna play my game?', 'Yes or No').toLowerCase();
+  answer = prompt('Do you want to play my game?', 'Yes or No').toLowerCase();
   bodyPart = 'left thumb';
   if (answer === 'yes' || answer === 'y') {
     alert('I was testing you, ' + user + '. Congratulations, you get 1 point');

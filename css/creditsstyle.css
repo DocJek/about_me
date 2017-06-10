@@ -3,7 +3,13 @@ nav {
   color: #FFF;
 }
 
+a {
+  text-decoration: none;
+}
 
+a:hover {
+  color: red;
+}
 
 body {
   background-color: #c4c68d;
