@@ -1,6 +1,9 @@
-nav {
-  display: inline-table;
-  color: #FFF;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
 }
 
 h2 {
@@ -10,37 +13,15 @@ h2 {
   font-size: 2.3em;
   /*border: 1px dashed #8B0000;*/
   padding-top: 0.1em;
-  text-align: center;
-  margin-top: 5px;
-  width: 200px;
-  margin: 0px 540px 0px 540px;
-  position: relative;
+  width: 5em;
+  float: right;
+  position: fixed;
 }
 
 body {
   background-image: url("../images/sawtricycle.jpg");
-  background-position: center;
-}
-
-dl {
-  color: #FFF;
-}
-
-dt {
-  font-weight: bold;
-  margin: 15px 0px;
-}
-
-section {
-  color: #FFF;
-  order: unset;
-  width: 200px;
-  padding: 1em;
-  float: right;
-  position: relative;
-}
-
-.top10 {
-  display: flex;
-  flex-direction: column-reverse;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
