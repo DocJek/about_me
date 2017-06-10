@@ -53,7 +53,7 @@ function intro() {
 
   alert('Welcome ' + user + '.');
 
-  alert('Now the rules: For every correct answer, you get 1 point. But get one wrong, you get docked a point and a body part.');
+  alert('Now the rules: For every correct answer, you get 1 point. But get one wrong, you get docked a point and a body part. Click Cancel on any of the first questions to exit the game, but beware, for after the 5th question lies the point of no return!');
 }
 
 function gameResult() {
