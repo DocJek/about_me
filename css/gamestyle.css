@@ -6,6 +6,7 @@ a:hover {
   color: red;
 }
 
+
 h2 {
   color: #8B0000;
   font-family: 'Nosifer', cursive;
@@ -14,7 +15,7 @@ h2 {
   /*border: 1px dashed #8B0000;*/
   padding-top: 0.1em;
   width: 5em;
-  float: right;
+  align: right;
   position: fixed;
 }
 
