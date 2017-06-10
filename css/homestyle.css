@@ -5,7 +5,6 @@ nav {
 
 h2 {
   color: #8B0000;
-  font-family: 'Nosifer', cursive;
   font-weight: 300;
   font-size: 2.3em;
   /*border: 1px dashed #8B0000;*/
@@ -18,8 +17,12 @@ h2 {
 }
 
 body {
-  background-image: url("../images/sawtricycle.jpg");
+  background-image: url("../images/AfroSamurai.jpg");
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 dl {

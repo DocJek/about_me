@@ -1,0 +1,33 @@
+nav {
+  display: inline-table;
+  color: #FFF;
+}
+
+
+
+body {
+  background-color: #c4c68d;
+}
+
+dl {
+  color: #FFF;
+}
+
+dt {
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+section {
+  color: #FFF;
+  order: unset;
+  width: 200px;
+  padding: 1em;
+  float: right;
+  position: relative;
+}
+
+.top10 {
+  display: flex;
+  flex-direction: column-reverse;
+}
