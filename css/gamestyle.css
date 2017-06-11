@@ -1,12 +1,35 @@
+<<<<<<< HEAD
+=======
+nav {
+  color: #FFF;
+}
+
+table {
+  text-align: center;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td:hover {
+  background-color: hsla(35, 96%, 100%, 0.7);
+}
+
+>>>>>>> 55d69347a3880cb1fb1d12cb49ea57fa8732468e
 nav a {
   display: inline;
   color: #8b0000;
   text-align: center;
   padding: 14px 16px;
+<<<<<<< HEAD
   text-decoration: none;
  }
 
 a {
+=======
+>>>>>>> 55d69347a3880cb1fb1d12cb49ea57fa8732468e
   text-decoration: none;
 }
 
@@ -23,7 +46,9 @@ td {
   border: 1px solid black;
 }
 
+
 h2 {
+<<<<<<< HEAD
    color: #8B0000;
    text-align: center;
    font-family: 'Nosifer', cursive;
@@ -35,6 +60,22 @@ h2 {
    margin-left: auto;
    margin-right: 105px;
  }
+=======
+  color: #8B0000;
+  text-align: center;
+  font-family: 'Nosifer', cursive;
+  font-weight: 300;
+  font-size: 2.3em;
+  /*border: 1px dashed #8B0000;*/
+  padding-top: 0.1em;
+  width: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: 105px;
+  /*position: fixed;*/
+  align: right;
+}
+>>>>>>> 55d69347a3880cb1fb1d12cb49ea57fa8732468e
 
 body {
   background-image: url("../images/sawtricycle.jpg");
