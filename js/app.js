@@ -17,6 +17,7 @@ question4();
 console.log('Does Roscoe like any sports: ' + answer);
 question5();
 console.log('Does Roscoe enjoy walking: ' + answer);
+alert('Congratulations for making it this far. From this point forward you will not be able to quit via the Cancel button. We must keep the tables balanced, however, so you will be awarded extra points before each of the following questions.');
 bonus(4);
 question6();
 console.log('Guess Roscoe\'s age: ' + answer);
@@ -40,7 +41,7 @@ function dockFingerAttempts() {
 }
 
 function bonus(userPoints){
-  alert('I\'m going to give you a chance at life. ' + userPoints + ' points.');
+  alert('I\'m going to give you a chance at life. +' + userPoints + ' points.');
   userPoints += userPoints;
 }
 
@@ -59,7 +60,7 @@ function intro() {
 function gameResult() {
   alert(user + ', you achieved ' + userPoints + ' points out of ' + totalPoints + '.');
   if (userPoints <= 0) {
-    alert('You Failed, and thus you bleed out and die');
+    alert('You Failed, and thus you bleed out and die.');
     console.log('User died');
     console.log('Final Score: ' + userPoints + ' points out of ' + totalPoints + '.');
   } else {

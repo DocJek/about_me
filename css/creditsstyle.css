@@ -4,6 +4,23 @@ nav {
 }
 
 a {
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  background-color: hsla(157, 97%, 27%, 0.7);
+}
+
+td:hover {
+  background-color: hsla(166, 53%, 11%, 0.7);
+}
+
+nav a {
+  display: inline;
+  color: rgb(200, 240, 250);
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -11,29 +28,33 @@ a:hover {
   color: red;
 }
 
-body {
-  background-color: #c4c68d;
+h1 {
+  color: white;
+  padding-left: 40px;
 }
 
-dl {
+
+li {
+  color: white;
   color: #FFF;
+  text-align: left;
+  list-style-type: square;
 }
 
-dt {
+
+h2 {
   font-weight: bold;
+  padding-left: 0.5em;
   margin: 15px 0px;
+  font-size: 50px;
 }
 
-section {
-  color: #FFF;
-  order: unset;
-  width: 200px;
-  padding: 1em;
-  float: right;
-  position: relative;
-}
-
-.top10 {
-  display: flex;
-  flex-direction: column-reverse;
+ body {
+   background-image: url("../images/batshadow.jpg");
+   color: #FFF;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   position: relative;
 }

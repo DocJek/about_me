@@ -1,26 +1,48 @@
+
 nav {
-  display: inline-table;
+  display: inline;
   color: #FFF;
 }
 
-a {
+tr {
+    width: 300px;
+    background-color: hsla(228, 97%, 46%, 0.7);
+}
+
+td:hover {
+  background-color: hsla(252, 97%, 34%, 0.7);
+}
+
+td p {
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+}
+
+nav a {
+  display: inline;
+  color: rgb(200, 240, 250);
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  color: #8B0000;
 }
 
 a:hover {
   color: red;
 }
 
-h2 {
+h1 {
   color: #8B0000;
+  text-shadow: 2px 1px 0.15 black;
   font-weight: 300;
   font-size: 2.3em;
   /*border: 1px dashed #8B0000;*/
   padding-top: 0.1em;
   margin-top: 5px;
   width: 300px;
-  position: relative;
-  clear: both;
 }
 
 body {
@@ -35,28 +57,32 @@ body {
 dl {
   color: #8b0000;
   text-shadow: 1px 1px 0.15em black;
+  width: 340px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  background-color: hsla(190, 76%, 44%, 0.4);
 }
 
-dt {
+h3 {
+  text-align: right;
   font-family: 'Ceviche One', cursive;
-  font-size: 35px;
-  margin: 15px 0px;
-}
-
-dd {
-  font-size: 16px;
 }
 
 section {
-  font-family: 'Ceviche One', cursive;
   font-size: 30px;
   text-shadow: 1px 1px 0.15em black;
+  text-align: left;
   color: #8b0000;
   order: unset;
   width: 200px;
+  padding-top: 0.1em;
+  display: block;
+  margin-left: auto;
+  margin-right: 105px;
   padding: 1em;
   float: right;
-  position: relative;
+  border: 1px solid black;
+  background-color: hsla(198, 36%, 66%, 0.5)
 }
 
 .top10 {
@@ -65,4 +91,17 @@ section {
   text-shadow: 1px 1px 0.15em black;
   display: flex;
   flex-direction: column-reverse;
+}
+
+dt {
+  font-family: 'Ceviche One', cursive;
+  font-size: 35px;
+  margin: 0px 0px 0px 15px;
+}
+
+dd {
+  font-size: 16px;
+  padding: 10px 0px 0px 10px;
+  margin: 0px 0px 0px 5px;
+  width: 350px;
 }
