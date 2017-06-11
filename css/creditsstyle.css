@@ -1,15 +1,10 @@
 nav {
+  display: inline-table;
   color: #FFF;
 }
 
-<<<<<<< HEAD
 a {
   text-align: center;
-=======
-table {
-  text-align: center;
-  border: 1px solid black;
->>>>>>> 55d69347a3880cb1fb1d12cb49ea57fa8732468e
 }
 
 td {
@@ -36,9 +31,7 @@ a:hover {
 h1 {
   color: white;
   padding-left: 40px;
-<<<<<<< HEAD
 }
-
 
 li {
   color: white;
@@ -46,7 +39,6 @@ li {
   text-align: left;
   list-style-type: square;
 }
-
 
 h2 {
   font-weight: bold;
@@ -63,26 +55,4 @@ h2 {
    -o-background-size: cover;
    background-size: cover;
    position: relative;
-=======
-}
-
-li {
-  color: white;
-  text-align: left;
-  list-style-type: square;
-}
-
-h2 {
-  background-color: rgb(1, 29, 79, 0.5);
-  padding-left: 0.5em;
-  font-size: 50px;
-}
-
-body {
-  background-image: url("../images/batshadow.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
->>>>>>> 55d69347a3880cb1fb1d12cb49ea57fa8732468e
 }
