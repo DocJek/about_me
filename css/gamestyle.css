@@ -1,4 +1,25 @@
-a {
+nav {
+  color: #FFF;
+}
+
+table {
+  text-align: center;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td:hover {
+  background-color: hsla(35, 96%, 100%, 0.7);
+}
+
+nav a {
+  display: inline;
+  color: #8b0000;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -7,16 +28,21 @@ a:hover {
 }
 
 
+
 h2 {
   color: #8B0000;
+  text-align: center;
   font-family: 'Nosifer', cursive;
   font-weight: 300;
   font-size: 2.3em;
   /*border: 1px dashed #8B0000;*/
   padding-top: 0.1em;
   width: 5em;
-  align: center;
-  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: 105px;
+  /*position: fixed;*/
+  align: right;
 }
 
 body {
